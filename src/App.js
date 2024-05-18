@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaLinkedin, FaFacebook, FaInstagram, FaGithub  } from "react-icons/fa";
+import logo from "./vs-logo.png";
 import "./App.css";
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
           <label htmlFor="check" className="checkbtn">
             <i><RxHamburgerMenu/></i>
           </label>
-          <img id="logo" src="vs-logo.png" alt="VS-logo"/>
+          <a href="./"><img id="logo" src={logo} alt="VS-logo"/></a>
           <ul>
             <li><a id="nav__a" href="./">Home</a></li>
             <li><a id="nav__a" href="./#about">About</a></li>
