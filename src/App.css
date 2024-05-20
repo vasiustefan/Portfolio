@@ -8,15 +8,16 @@
 body{
     min-width: fit-content;
     font-family: 'JetBrains Mono';
+    background-color: black;
 }
 /*NavBar*/
 nav{
-    background-color: rgb(32,34,27);
-    height: 80px;
+    background-color: black;
+    height: 81px;
     width: 100%;
 }
 #logo{
-    padding: 0 20px;
+    padding: 10px 20px;
     width: auto;
     height: 100%;
 }
@@ -31,7 +32,7 @@ nav ul li{
 }
 nav ul li a{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -55,9 +56,12 @@ nav ul li a:hover{
 }
 /*Home*/
 .home__section{
-    background-image: url("home-background.jpg");
-    background-size: cover;
-    height: 500px;
+    height: fit-content;
+    padding-bottom: 30px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: white;
 }
 #home__a{
     background: rgb(233,65,0);
@@ -67,11 +71,11 @@ nav ul li a:hover{
     margin: auto;
 }
 .home__hero{
-    padding-top: 50px;
     text-align: center;
+    margin: 0 auto;
     height: 100%;
-    color: white;
-    font-size: 2rem;
+    color: black;
+    font-size: 1.5rem;
 }
 .home__hero h1, .home__hero p, #home__a{
     margin-top: 40px;
@@ -85,28 +89,41 @@ nav ul li a:hover{
 }
 .social__icons{
     height: fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    float: left;
-    padding: 10px;
     background-color: white;
-    margin: 125px 0 0 10px;
+    margin: auto 25px;
     border: 2px solid;
     border-radius: 10px;
-    border-color: orange;
+    border-color: black;
 }
 .social__icons a{
     color: black;
-    font-size: 20px;
     padding: 5px;
-    height: fit-content;
 }
 .social__icons a:hover{
-    background-color: rgba(233,65,0,0.7);
+    background-color: rgba(233,65,0,.7);
     border-radius: 5px;
 }
-
-@media (max-width: 858px){
+.social__ico{
+    font-size: 35px;
+}
+@media (max-width: 1024px){
+    .home__hero{
+        font-size: 1.3rem;
+    }
+    .social__ico{
+        font-size: 25px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    #logo{
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 600px){
     .checkbtn{
         display: block;
     }
@@ -132,6 +149,20 @@ nav ul li a:hover{
         left: 0;
     }
     .home__hero{
-        font-size: 25px;
+        font-size: 1rem;
     }
+    .social__ico{
+        font-size: 20px;
+    }
+}
+/*About*/
+.about__section{
+    color: white;
+}
+
+.about__section h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

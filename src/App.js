@@ -21,54 +21,50 @@ class App extends Component {
           </ul>
         </nav>
 
-        <section className="home__section">
-          <div>
-            <div className="social__icons">
-              <a href="https://github.com/vasiustefan" target="_blank" rel="noreferrer"><FaGithub size="50px"/></a>
-              <a href="https://www.linkedin.com/in/stefan-vasiu-516559264/" target="_blank" rel="noreferrer"><FaLinkedin size="50px"/></a>
-              <a href="https://www.facebook.com/profile.php?id=100081885259340" target="_blank" rel="noreferrer"><FaFacebook size="50px"/></a>
-              <a href="https://www.instagram.com/stefan.vasiu/" target="_blank" rel="noreferrer"><FaInstagram size="50px"/></a>
-            </div>
-            <div className="home__hero">
-              <h1>Hey, I'm Stefan</h1>
-              <p>I am determined to become a skilled web developer <br/> and actively working towards that goal.</p>
-              <div className="home__a" id="home__a">
-                <a href="./#projects">Projects</a>
-              </div>
+        <div className="home__section">
+          <div className="home__hero">
+            <h1>Hey, I'm Stefan</h1>
+            <p>I am determined to become a skilled web developer <br/> and actively working towards that goal.</p>
+            <div className="home__a" id="home__a">
+              <a href="./#projects">Projects</a>
             </div>
           </div>
-        </section>
+          <div className="social__icons">
+            <a href="https://github.com/vasiustefan" target="_blank" rel="noreferrer"><FaGithub className="social__ico"/></a>
+            <a href="https://www.linkedin.com/in/stefan-vasiu-516559264/" target="_blank" rel="noreferrer"><FaLinkedin className="social__ico" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100081885259340" target="_blank" rel="noreferrer"><FaFacebook className="social__ico" /></a>
+            <a href="https://www.instagram.com/stefan.vasiu/" target="_blank" rel="noreferrer"><FaInstagram className="social__ico"/></a>
+          </div>
+        </div>
 
-        <section id="about">
+        <div className="about__section">
+          <h2>
+            About me
+            <span> - </span>
+            <span>asdakdlasdlsakdaslfkaslsfalskfslalafsk</span>
+          </h2>
           <div>
-            <h2>
-              About me
-              <span> - </span>
-              <span>asdakdlasdlsakdaslfkaslsfalskfslalafsk</span>
-            </h2>
             <div>
+              <h3>Get to know me!</h3>
               <div>
-                <h3>Get to know me!</h3>
-                <div>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maxime porro accusantium dicta quia nemo ducimus! Maxime, alias consectetur. Minima, numquam nostrum provident recusandae deleniti labore voluptatum necessitatibus aliquid maxime.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maxime porro accusantium dicta quia nemo ducimus! Maxime, alias consectetur. Minima, numquam nostrum provident recusandae deleniti labore voluptatum necessitatibus aliquid maxime.</p>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maxime porro accusantium dicta quia nemo ducimus! Maxime, alias consectetur. Minima, numquam nostrum provident recusandae deleniti labore voluptatum necessitatibus aliquid maxime.</p>
-                </div>
-                <a href="./#contact">Contact like a button in CSS</a>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maxime porro accusantium dicta quia nemo ducimus! Maxime, alias consectetur. Minima, numquam nostrum provident recusandae deleniti labore voluptatum necessitatibus aliquid maxime.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maxime porro accusantium dicta quia nemo ducimus! Maxime, alias consectetur. Minima, numquam nostrum provident recusandae deleniti labore voluptatum necessitatibus aliquid maxime.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias maxime porro accusantium dicta quia nemo ducimus! Maxime, alias consectetur. Minima, numquam nostrum provident recusandae deleniti labore voluptatum necessitatibus aliquid maxime.</p>
               </div>
+              <a href="./#contact">Contact like a button in CSS</a>
+            </div>
+            <div>
+              <h3>My skills</h3>
               <div>
-                <h3>My skills</h3>
-                <div>
-                  <div>HTML</div>
-                  <div>CSS</div>
-                  <div>JavaScript</div>
-                  <div>React.JS</div>
-                  <div>Vue.JS</div>
-                </div>
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>React.JS</div>
+                <div>Vue.JS</div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <section id="projects">
           <div>
