@@ -58,32 +58,33 @@ nav ul li a:hover{
 .home__section{
     height: fit-content;
     padding-bottom: 30px;
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
-#home__a{
+.home__hero{
+    text-align: center;
+    height: 100%;
+    color: black;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.home__hero h1, .home__hero p{
+    margin-top: 40px;
+}
+#home__projects{
     background: rgb(233,65,0);
     border-radius: 3px;
     padding: 5px;
     width: fit-content;
-    margin: auto;
+    margin: 20px auto;
 }
-.home__hero{
-    text-align: center;
-    margin: 0 auto;
-    height: 100%;
-    color: black;
-    font-size: 1.5rem;
-}
-.home__hero h1, .home__hero p, #home__a{
-    margin-top: 40px;
-}
-#home__a a{
+#home__projects a{
     color: white;
 }
-#home__a:hover{
+#home__projects:hover{
     transform: translate(0, -10px);
     transition: .5s;
 }
@@ -97,19 +98,25 @@ nav ul li a:hover{
     border: 2px solid;
     border-radius: 10px;
     border-color: black;
+    position: absolute;
 }
 .social__icons a{
     color: black;
     padding: 5px;
 }
-.social__icons a:hover{
-    background-color: rgba(233,65,0,.7);
-    border-radius: 5px;
-}
-.social__ico{
+.social__react__icons{
     font-size: 35px;
 }
-@media (max-width: 1024px){
+#linkedin__icon:hover{
+    color: #0077B5;
+}
+#facebook__icon:hover{
+    color: blue;
+}
+#instagram__icon:hover{
+    color: #c13584;
+}
+@media (max-width: 900px){
     .home__hero{
         font-size: 1.3rem;
     }
@@ -117,10 +124,13 @@ nav ul li a:hover{
         font-size: 25px;
     }
     nav ul li a{
-        font-size: 15px;
+        font-size: 16px;
     }
     #logo{
         padding: 15px 20px;
+    }
+    .social__icons{
+        display: none;
     }
 }
 @media (max-width: 600px){
@@ -158,11 +168,70 @@ nav ul li a:hover{
 /*About*/
 .about__section{
     color: white;
+    background-color: black;
+    padding: 20px 10px;
 }
-
-.about__section h2{
+.about__hero, .projects__hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+#about__contact{
+    background:rgb(233,65,0);
+    border-radius: 3px;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+#about__contact a{
+    color: white;
+    font-size: 1.2rem;
+}
+#about__contact:hover{
+    transform: translate(0, -10px);
+    transition: .5s;
+}
+.about__info{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin: 50px 0;
+    text-align: center;
+}
+.about__info__first{
+    width: 50rem;
+}
+.about__info__second{
+    width: 30rem;
+}
+.about__info__first h3{
+    margin-bottom: 15px;
+}
+.about__info__first p{
+    margin-top: 15px;
+}
+.skills__tree{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills{
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+}
+/*Projects*/
+.projects__section{
+    color: black;
+    background-color: white;
+    padding: 20px 10px;
 }
